@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<!--This IoT based website coode has been developed by Vijitaa Das
+<!--
+This IoT based website code has been developed by Vijitaa Das
 -->
 <html>
 <head>
 <title>Light-Fan on/off</title>
+<style>
+body{
+background-color:black;
+ text-align=center;
+}
+</style>
+</head>
+
+
+<body>
 <h2><font style="color:orange" size="10"><center><strong>IoT</strong> Assignment</center></h2>
 
-<marquee bgcolor="red" direction="left" behavior="scroll" style="color:white">Switch on/off Five lights</font></marquee>
-</head>
-<br></br>
-
-<body style="background-color:black" align=center>
-<p>
+<marquee bgcolor="red" direction="left" behavior="scroll" style="color:white"><font size="5">Switch on/off Five lights</font></marquee>
+<center><p>
 <button onclick="document.getElementById('myImage1').src='pic_bulbon1.gif'"> Turn on the Light 1 </button>
 <img id="myImage1" src="pic_bulboff1.gif" style="width:100px">
 <button onclick="document.getElementById('myImage1').src='pic_bulboff1.gif'"> Turn off the Light 1 </button>
@@ -20,11 +27,11 @@
 <button onclick="document.getElementById('myImage2').src='pic_bulboff2.gif'"> Turn off the Light 2 </button>
 <button onclick="document.getElementById('myImage3').src='pic_bulbon3.gif'"> Turn on the Light 3 </button>
 <img id="myImage3" src="pic_bulboff3.gif" style="width:100px">
-<button onclick="document.getElementById('myImage3').src='pic_bulboff3.gif'"> Turn off the Light 3 </button>
+<button onclick="document.getElementById('myImage3').src='pic_bulboff3.gif'"> Turn off the Light 3 </button><br>
 <button onclick="document.getElementById('myImage4').src='pic_bulbon4.gif'"> Turn on the Light 4 </button>
 <img id="myImage4" src="pic_bulboff4.gif" style="width:100px">
 <button onclick="document.getElementById('myImage4').src='pic_bulboff4.gif'"> Turn off the Light 4 </button>
-<br></br>
+
 <button onclick="document.getElementById('myImage5').src='pic_bulbon5.gif'"> Turn on the Light 5 </button>
 <img id="myImage5" src="pic_bulboff5.gif" style="width:100px">
 <button onclick="document.getElementById('myImage5').src='pic_bulboff5.gif'"> Turn off the Light 5 </button>
@@ -58,7 +65,7 @@ document.getElementById("myImage5").src=pic5;
 </script>
 <button onclick="light(1)"> Turn on all the Lights </button>
 <button onclick="light(0)"> Turn off all the Lights </button>
-</p>
+</p></center>
 </body>
 
 
