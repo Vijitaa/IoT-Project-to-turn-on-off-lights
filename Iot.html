@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Light-Fan on/off</title>
+<h2><font style="color:orange" size="10"><center><strong>IoT</strong> Assignment</center></h2>
+
+<marquee bgcolor="red" direction="left" behavior="scroll" style="color:white">Switch on/off Five lights</font></marquee>
+</head>
+<br></br>
+
+<body style="background-color:black" align=center>
+<p>
+<button onclick="document.getElementById('myImage1').src='pic_bulbon1.gif'"> Turn on the Light 1 </button>
+<img id="myImage1" src="pic_bulboff1.gif" style="width:100px">
+<button onclick="document.getElementById('myImage1').src='pic_bulboff1.gif'"> Turn off the Light 1 </button>
+<button onclick="document.getElementById('myImage2').src='pic_bulbon2.gif'"> Turn on the Light 2 </button>
+<img id="myImage2" src="pic_bulboff2.gif" style="width:100px">
+<button onclick="document.getElementById('myImage2').src='pic_bulboff2.gif'"> Turn off the Light 2 </button>
+<button onclick="document.getElementById('myImage3').src='pic_bulbon3.gif'"> Turn on the Light 3 </button>
+<img id="myImage3" src="pic_bulboff3.gif" style="width:100px">
+<button onclick="document.getElementById('myImage3').src='pic_bulboff3.gif'"> Turn off the Light 3 </button>
+<button onclick="document.getElementById('myImage4').src='pic_bulbon4.gif'"> Turn on the Light 4 </button>
+<img id="myImage4" src="pic_bulboff4.gif" style="width:100px">
+<button onclick="document.getElementById('myImage4').src='pic_bulboff4.gif'"> Turn off the Light 4 </button>
+<br></br>
+<button onclick="document.getElementById('myImage5').src='pic_bulbon5.gif'"> Turn on the Light 5 </button>
+<img id="myImage5" src="pic_bulboff5.gif" style="width:100px">
+<button onclick="document.getElementById('myImage5').src='pic_bulboff5.gif'"> Turn off the Light 5 </button>
+<br></br>
+<script>
+function light(value)
+{
+var pic1,pic2,pic3,pic4,pic5;
+if(value==0)
+{
+pic1="pic_bulboff1.gif";
+pic2="pic_bulboff2.gif";
+pic3="pic_bulboff3.gif";
+pic4="pic_bulboff4.gif";
+pic5="pic_bulboff5.gif";
+}
+else
+{
+pic1="pic_bulbon1.gif";
+pic2="pic_bulbon2.gif"
+pic3="pic_bulbon3.gif";
+pic4="pic_bulbon4.gif";
+pic5="pic_bulbon5.gif";
+}
+document.getElementById("myImage1").src=pic1;
+document.getElementById("myImage2").src=pic2;
+document.getElementById("myImage3").src=pic3;
+document.getElementById("myImage4").src=pic4;
+document.getElementById("myImage5").src=pic5;
+}
+</script>
+<button onclick="light(1)"> Turn on all the Lights </button>
+<button onclick="light(0)"> Turn off all the Lights </button>
+</p>
+</body>
+
+
+
+
+</html>
